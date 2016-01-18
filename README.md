@@ -39,4 +39,4 @@ add follow code to your db setting.
 Changelog
 ------------
 
-[Changelog](blob/master/CHANGELOG.md)
+[Changelog](CHANGELOG.md)
