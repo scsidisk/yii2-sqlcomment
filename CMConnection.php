@@ -50,8 +50,7 @@ class CMConnection extends Connection
         $stamp = '';
         if (PHP_SAPI == 'cli') {
             $stamp = !empty(Yii::$app->requestedRoute) ?
-            Yii::$app->requestedRoute : 'cli';
-
+            Yii::$app->requestedRoute : __File__ . ':' . __Line__;
         } else {
             $url_path = parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
             $rule     = explode('/', $url_path, 5);
@@ -63,7 +62,11 @@ class CMConnection extends Connection
                 $stamp .= '-' . $act[0];
             }
         }
-        $sql = $sql . '/*' . Yii::$app->id . ':' . $stamp . '*/';
+        $app_id = !empty(Yii::$app->id) ?
+        Yii::$app->id : 'test';
+
+        // $sql = $sql . '/*' . Yii::$app->id . ':' . $stamp . '*/';
+        $sql = $sql . '/*' . $app_id . ':' . $stamp . '*/';
 
         return $sql;
 
