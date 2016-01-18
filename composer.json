@@ -1,0 +1,21 @@
+{
+    "name": "scsidisk/yii2-sqlcomment",
+    "description": "Easy and nice cURL extension with RESTful support for Yii2",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","sql", "comment"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Scsidisk",
+            "email": "scsidisk@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*",
+    },
+    "autoload": {
+        "psr-4": {
+            "scsidisk\\yii2\\sqlcomment\\": ""
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "yii2-sqlcomment",
+  "version": "1.0.0",
+  "description": "add comment to sql",
+  "author": "scsidisk",
+  "license": "MIT",
+  "devDependencies": {
+    "cz-conventional-changelog": "^1.1.5",
+    "ghooks": "^1.0.3",
+    "jasmine": "^2.4.1",
+    "validate-commit-msg": "^1.1.0"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scsidisk/yii2-sqlcomment.git"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    },
+    "ghooks": {
+      "commit-msg": "./node_modules/validate-commit-msg/index.js"
+    }
+  }
+}
