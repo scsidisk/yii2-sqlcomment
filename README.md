@@ -3,7 +3,9 @@ yii2 SQL Comment
 
 Add comment to end of sql.
 
-[![Build Status](https://travis-ci.org/scsidisk/yii2-sqlcomment.svg?branch=master)](https://travis-ci.org/scsidisk/yii2-sqlcomment)
+| General |  Windows |
+| ------- | -------- |
+| [![Build Status](https://travis-ci.org/scsidisk/yii2-sqlcomment.svg?branch=master)](https://travis-ci.org/scsidisk/yii2-sqlcomment) |  |
 
 Requirements
 ------------
