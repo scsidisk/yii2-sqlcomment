@@ -25,7 +25,7 @@ class CMConnectionTest extends \Codeception\TestCase\Test
         $sql    = 'show table;';
         $params = [];
         $newSQL = $conn->createCommand($sql, $params);
-        $path   = dirname(dirname(__Dir__)) . '/CMConnection.php:54';
+        $path   = dirname(dirname(__Dir__)) . '/CMConnection.php:53';
 
         $this->assertEquals($sql . '/*test:' . $path . '*/', $newSQL->getSql());
     }
