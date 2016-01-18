@@ -8,6 +8,11 @@ Requirements
 - Yii2
 - PHP 5.4+
 
+Database support
+----------------
+
+- MySQL
+
 Installation
 ------------
 
