@@ -50,7 +50,7 @@ class CMConnection extends Connection
         $stamp = '';
         if (PHP_SAPI == 'cli') {
             $stamp = !empty(Yii::$app->requestedRoute) ?
-            Yii::$app->requestedRoute : __File__ . ':' . __Line__;
+            Yii::$app->requestedRoute : 'cli';
         } else {
             $url_path = parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
             $rule     = explode('/', $url_path, 5);
