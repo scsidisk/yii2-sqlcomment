@@ -24,12 +24,3 @@ install:
 test_script:
   - php codecept run cli --no-colors -n --skip-group coverage
   - php codecept run unit -g core -g appveyor --no-colors -n
-
-deploy:
-  provider: GitHub
-  auth_token:
-    secure: 98cda920050c49bfffafb65236270173c115b4a3 # your encrypted token from GitHub
-  draft: false
-  prerelease: false
-  on:
-    branch: master                 # release from master branch only
