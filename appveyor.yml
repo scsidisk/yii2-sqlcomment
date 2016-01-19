@@ -18,9 +18,9 @@ install:
   - php composer.phar self-update
   - php composer.phar --version
   - php composer.phar global require "fxp/composer-asset-plugin:~1.0.0"
-  - php composer.phar global require "codeception/codeception:*"
+  - php composer.phar require "codeception/codeception:*"
   - php composer.phar install --prefer-dist -n --no-ansi
 
 test_script:
-  - php codecept run cli --no-colors -n --skip-group coverage
-  - php codecept run unit -g core -g appveyor --no-colors -n
+  # - php bin/codecept run cli --no-colors -n --skip-group coverage
+  - php bin/codecept run unit -g core -g appveyor --no-colors -n

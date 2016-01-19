@@ -3,9 +3,10 @@ yii2 SQL Comment
 
 Add comment to end of sql.
 
-| General |  Windows |
-| ------- | -------- |
-| [![Build Status](https://travis-ci.org/scsidisk/yii2-sqlcomment.svg?branch=master)](https://travis-ci.org/scsidisk/yii2-sqlcomment) |  |
+[![Build Status](https://travis-ci.org/scsidisk/yii2-sqlcomment.svg?branch=master)](https://travis-ci.org/scsidisk/yii2-sqlcomment)
+[![Latest Stable Version](https://poser.pugx.org/scsidisk/yii2-sqlcomment/v/stable)](https://packagist.org/packages/scsidisk/yii2-sqlcomment)
+[![Total Downloads](https://poser.pugx.org/scsidisk/yii2-sqlcomment/downloads)](https://packagist.org/packages/scsidisk/yii2-sqlcomment)
+[![License](https://poser.pugx.org/scsidisk/yii2-sqlcomment/license)](https://packagist.org/packages/scsidisk/yii2-sqlcomment)
 
 Requirements
 ------------
