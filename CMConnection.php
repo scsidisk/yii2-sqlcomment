@@ -56,10 +56,10 @@ class CMConnection extends Connection
             $rule     = explode('/', $url_path, 5);
 
             $stamp = !empty($rule[1]) ? $rule[1] : $stamp;
-            $stamp .= !empty($rule[2]) ? '-' . $rule[2] : '';
+            $stamp .= !empty($rule[2]) ? '_' . $rule[2] : '';
             if (!empty($rule[3])) {
                 $act = explode('?', $rule[3]);
-                $stamp .= '-' . $act[0];
+                $stamp .= '_' . $act[0];
             }
         }
         $app_id = !empty(Yii::$app->id) ?
